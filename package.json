@@ -2,9 +2,8 @@
     "scripts": {
   
     
-        "serve": "nodemon server.js",
+        "serve": "nodemon server.js"
           
-        "build": "npm run build"
         
         }
 }

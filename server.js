@@ -29,7 +29,7 @@ const history = require('connect-history-api-fallback');
 // import history from 'connect-history-api-fallback';
 
 const app = express();
-const port = 3001;
+const port = 3010;
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.resolve(__dirname, '../dist'), { maxAge : '1y', etag: false}));

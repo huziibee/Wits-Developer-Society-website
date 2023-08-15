@@ -32,7 +32,7 @@ const app = express();
 // const portt = 3010;
 
 // Serve static files from the 'public' folder
-app.use(express.static(path.resolve(__dirname, '../dist'), { maxAge : '1y', etag: false}));
+app.use(express.static(path.resolve(__dirname, './dist'), { maxAge : '1y', etag: false}));
 app.use(history());
 
 

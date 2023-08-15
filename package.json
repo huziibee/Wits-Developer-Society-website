@@ -2,8 +2,7 @@
     "scripts": {
   
     
-        "serve": "nodemon server.js"
-          
+        "start": "node server.js"
         
         }
 }

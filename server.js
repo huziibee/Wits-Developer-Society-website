@@ -49,6 +49,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist','index.html'));
 });
 
-app.listen( process.env.PORT || 80, () => {
-  console.log(`Example app listening on port ${  process.env.PORT || 80}`);
+app.listen( 80, () => {
+  console.log(`Example app listening on port ${80}`);
 });

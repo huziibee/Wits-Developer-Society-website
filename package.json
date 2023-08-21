@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "deploy": "git add . && git commit -m \"Initial commit\" && git push origin master",
     "backend": "nodemon ./server.js"
   },
   "dependencies": {

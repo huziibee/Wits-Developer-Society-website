@@ -24,7 +24,7 @@ const cors = require('cors');
 const path = require('path');
 require('./database');
 
-// const history = require('connect-history-api-fallback');
+const history = require('connect-history-api-fallback');
 
 // import history from 'connect-history-api-fallback';
 
@@ -32,7 +32,7 @@ const app = express();
 // const portt = 3010;
 
 // Serve static files from the 'public' folder
-app.use(express.static('./dist'));
+app.use(express.static(path.resolve(__dirname, './dist'), { maxAge : '1y', etag: false}));
 app.use(history());
 
 
@@ -46,9 +46,9 @@ app.use('/api/v1/auth', authRoute);
 
 // Handle requests that don't match any routes by serving the frontend index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'dist','index.html'));
+  res.sendFile(path.join(__dirname, './dist/index.html'));
 });
 
-app.listen( 80, () => {
-  console.log(`Example app listening on port ${80}`);
+app.listen( process.env.PORT || 3001, () => {
+  console.log(`Example app listening on port ${  process.env.PORT || 3001}`);
 });

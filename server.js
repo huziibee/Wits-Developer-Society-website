@@ -19,10 +19,10 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const authRoute = require('./routes/auth');
+// const authRoute = require('./routes/auth');
 const cors = require('cors');
 const path = require('path');
-require('./database');
+// require('./database');
 
 const history = require('connect-history-api-fallback');
 
@@ -41,7 +41,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/api/v1/auth', authRoute);
+// app.use('/api/v1/auth', authRoute);
 
 
 // Handle requests that don't match any routes by serving the frontend index.html

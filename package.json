@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "deploy": "git add . && git commit -m \"Initial commit\" && git push origin master",

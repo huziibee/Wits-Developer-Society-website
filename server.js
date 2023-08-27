@@ -1,22 +1,3 @@
-// const express = require('express')
-// const bodyParser = require('body-parser')
-// const authRoute = require('./routes/auth')
-// const cors = require('cors')
-// require('./database')
-// const app = express()
-// const port = 3001
-
-// app.use(express.json())
-// app.use(bodyParser.urlencoded({extended : true})) 
-// app.use(bodyParser.json())
-// app.use(cors())
-// app.use('/api/v1/auth', authRoute)
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`)
-// })
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const authRoute = require('./routes/auth');

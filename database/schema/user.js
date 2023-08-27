@@ -14,4 +14,4 @@ const dbschema = new mongoose.Schema({
         // bannerImg: String,
 
 
-module.exports = mongoose.model( 'blogs',dbschema)
+module.exports = mongoose.model( process.env.DBNAME, dbschema)
